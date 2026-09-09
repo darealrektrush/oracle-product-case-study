@@ -40,6 +40,29 @@ Oracle provides one operating layer for:
 | Administration | Gives the team diagnostic, review, configuration, and member-support controls |
 | Automation | Runs scheduled activity processing, notifications, refresh jobs, and bounded community nudges |
 
+## Product in action
+
+These production screens show the member-facing product and the operational surfaces behind it. Screens containing individual community-member data are intentionally excluded.
+
+<table>
+  <tr>
+    <td width="33%" valign="top"><img src="./docs/images/oracle-main-hub.jpg" alt="Oracle main hub" width="260"><br><strong>Unified product hub</strong><br>One entry point for community access, intelligence, markets, raids, profiles, and support.</td>
+    <td width="33%" valign="top"><img src="./docs/images/trench-intelligence.jpg" alt="Oracle Trench Intelligence tools" width="260"><br><strong>Trench intelligence</strong><br>Wallet, token, transaction, signal, mission, and ranking workflows organized behind one interface.</td>
+    <td width="33%" valign="top"><img src="./docs/images/market-intelligence.jpg" alt="Oracle Market Intelligence tools" width="260"><br><strong>Market intelligence</strong><br>Price, chart, holder, whale, trend, and tokenomics views backed by live-data integrations.</td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top"><img src="./docs/images/raid-command.jpg" alt="Oracle Raid Command" width="260"><br><strong>Participation operations</strong><br>Raid education, X connection, XP, submissions, review controls, queues, and configuration.</td>
+    <td width="33%" valign="top"><img src="./docs/images/member-profile.jpg" alt="Oracle member profile" width="260"><br><strong>Persistent member profile</strong><br>Identity, XP, rank, missions, activity, rewards, support state, and next actions in one view.</td>
+    <td width="33%" valign="top"><img src="./docs/images/support-desk.jpg" alt="Oracle Support Desk" width="260"><br><strong>Support infrastructure</strong><br>Private, categorized requests for access, verification, connections, raids, rewards, bugs, and feedback.</td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="./docs/images/x-health-analytics.jpg" alt="Oracle X connection health analytics" width="300"><br>
+  <strong>Operational health analytics</strong><br>
+  Aggregate connection health, recovery activity, coverage, and diagnostic scoring for administrators.
+</p>
+
 ## System architecture
 
 ```mermaid
