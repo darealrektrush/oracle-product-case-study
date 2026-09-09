@@ -38,6 +38,7 @@ Oracle provides one operating layer for:
 | Community access | Guides entry checks, assisted-entry requests, retries, overrides, and recovery workflows |
 | Support and moderation | Routes member issues to an operational command surface with status and audit context |
 | Administration | Gives the team diagnostic, review, configuration, and member-support controls |
+| Analytics dashboard | Provides 30-day and configurable views across growth, churn, referrals, activity, health, engagement, moderation, commands, keywords, and communications |
 | Automation | Runs scheduled activity processing, notifications, refresh jobs, and bounded community nudges |
 
 ## Product in action
@@ -61,6 +62,12 @@ These production screens show the member-facing product and the operational surf
   <img src="./docs/images/x-health-analytics.jpg" alt="Oracle X connection health analytics" width="300"><br>
   <strong>Operational health analytics</strong><br>
   Aggregate connection health, recovery activity, coverage, and diagnostic scoring for administrators.
+</p>
+
+<p align="center">
+  <img src="./docs/images/oracle-pulse-dashboard.jpg" alt="Oracle Pulse analytics mini app and dashboard" width="300"><br>
+  <strong>Oracle Pulse analytics dashboard</strong><br>
+  A dedicated Mini App surface for growth and churn, invite and referral performance, activity, community health, leaderboards, message analytics, engagement, moderation, bot usage, keywords, and announcements.
 </p>
 
 ## System architecture
