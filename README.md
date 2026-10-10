@@ -64,20 +64,16 @@ These existing interface examples illustrate the Telegram product and its operat
   <tr>
     <td width="33%" valign="top"><img src="./docs/images/oracle-main-hub.jpg" alt="Oracle main hub" width="260"><br><strong>Unified product hub</strong><br>One entry point for community access, intelligence, markets, raids, profiles, and support.</td>
     <td width="33%" valign="top"><img src="./docs/images/trench-intelligence.jpg" alt="Oracle Trench Intelligence tools" width="260"><br><strong>Trench intelligence</strong><br>Wallet, token, transaction, signal, mission, and ranking workflows organized behind one interface.</td>
-    <td width="33%" valign="top"><img src="./docs/images/market-intelligence.jpg" alt="Oracle Market Intelligence tools" width="260"><br><strong>Market intelligence</strong><br>Price, chart, holder, whale, trend, and tokenomics views backed by live-data integrations.</td>
+    <td width="33%" valign="top"><img src="./docs/images/market-intelligence.jpg" alt="Oracle Market Intelligence tools" width="260"><br><strong>Market intelligence</strong><br>Historical navigation for price, chart, holder, whale, trend and tokenomics tools; the screenshot does not verify provider availability.</td>
   </tr>
   <tr>
     <td width="33%" valign="top"><img src="./docs/images/raid-command.jpg" alt="Oracle Raid Command" width="260"><br><strong>Participation operations</strong><br>Raid education, X connection, XP, submissions, review controls, queues, and configuration.</td>
-    <td width="33%" valign="top"><img src="./docs/images/member-profile.jpg" alt="Oracle member profile" width="260"><br><strong>Persistent member profile</strong><br>Identity, XP, rank, missions, activity, rewards, support state, and next actions in one view.</td>
+    <td width="33%" valign="top"><strong>Persistent member profile</strong><br>Identity, reputation, contribution history and next actions share one profile. Account-specific screenshots are excluded from this public gallery.</td>
     <td width="33%" valign="top"><img src="./docs/images/support-desk.jpg" alt="Oracle Support Desk" width="260"><br><strong>Support infrastructure</strong><br>Private, categorized requests for access, verification, connections, raids, rewards, bugs, and feedback.</td>
   </tr>
 </table>
 
-<p align="center">
-  <img src="./docs/images/x-health-analytics.jpg" alt="Oracle X connection health analytics" width="300"><br>
-  <strong>Operational health analytics</strong><br>
-  Aggregate connection health, recovery activity, coverage, and diagnostic scoring for administrators.
-</p>
+**Operational diagnostics:** Oracle includes connection-health and recovery views for operators. Internal metrics, scoring details and account states are excluded from this public case study.
 
 <p align="center">
   <img src="./docs/images/oracle-pulse-dashboard.jpg" alt="Oracle Pulse analytics mini app and dashboard" width="300"><br>
