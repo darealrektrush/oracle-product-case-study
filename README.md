@@ -2,9 +2,9 @@
 
 # ORACLE
 
-### AI Intelligence, Identity & Community Operations Infrastructure
+### Identity, Intelligence & Ecosystem Operations
 
-**A production-deployed system built and operated for the CrabStar ecosystem**
+**A modular platform connecting persistent identity, intelligence and community operations for CrabStar**
 
 [Product Overview](#product-overview) · [Architecture](#system-architecture) · [Engineering](#engineering-decisions) · [My Role](#my-role)
 
@@ -12,7 +12,7 @@
 
 ---
 
-> **Case-study repository:** This repository documents a private production system. It intentionally contains no application source code, credentials, private endpoints, member data, or security-sensitive implementation details.
+> **Public engineering case study:** Product scope, selected interface examples and high-level engineering decisions. Application source and operational documentation remain private.
 
 ## Executive summary
 
@@ -20,7 +20,7 @@ Oracle is an AI-assisted intelligence and operations platform designed to turn a
 
 It combines a Telegram product surface with identity, profiles, participation infrastructure, support workflows, market and Solana intelligence, administrative controls, scheduled automation, and production observability. Instead of treating each feature as an isolated bot command, Oracle coordinates them through shared services and persistent data.
 
-The production worker, webhook service, operations service, and scheduled jobs are deployed on Render. Individual flows have regression and release checks; complete-system production verification is an ongoing operational process.
+Oracle's repository contains a Telegram application, identity service, platform API, analytics surface and reusable domain services. Historical release records describe deployed services, but this case study is not a fresh live-service audit. Current cross-product identity and integration work is tracked separately from existing implementation.
 
 ## Product overview
 
@@ -31,7 +31,7 @@ Oracle provides one operating layer for:
 | Product surface | What it does |
 |---|---|
 | AI intelligence | Answers ecosystem and market questions with request-gated live context and explicit unavailable states |
-| Identity | Links Telegram and X accounts through OAuth 2.0 PKCE with short-lived state |
+| Identity | Persistent profiles and verified connections; progressive Google/Apple ecosystem entry is under development |
 | Member profiles | Connects identity, participation, XP, rank, streaks, referrals, rewards, and receipts |
 | Participation | Manages raids, missions, verification states, leaderboards, alerts, and settlement receipts |
 | Solana tools | Explains public transactions, inspects public wallets, and surfaces token and authority data |
@@ -41,9 +41,24 @@ Oracle provides one operating layer for:
 | Analytics dashboard | Provides 30-day and configurable views across growth, churn, referrals, activity, health, engagement, moderation, commands, keywords, and communications |
 | Automation | Runs scheduled activity processing, notifications, refresh jobs, and bounded community nudges |
 
+## Beyond Telegram
+
+Oracle is evolving into the shared identity, intelligence and operating layer consumed by multiple CrabStar products.
+
+| Product | Relationship |
+| --- | --- |
+| Project Q | Owns campaign economics and consumes Oracle-verified identity; accepted campaign contribution can feed permanent progression |
+| Universe | Unified application experience consuming Oracle and Q |
+| Bagwork | Contribution and impact platform with shared identity and economic integrations under development |
+| Shadow | Separate DeFi intelligence and agentic infrastructure; future integration preserves independent research and trading boundaries |
+
+The approved identity direction begins with Google or Apple ecosystem entry, then adds Telegram/X connections and a verified Solana wallet as required. Existing members should claim their canonical profiles while preserving history and reputation.
+
+These expanded authentication and integration paths are active development, not a claim that the complete journey is currently live.
+
 ## Product in action
 
-These production screens show the member-facing product and the operational surfaces behind it. Screens containing individual community-member data are intentionally excluded.
+These existing interface examples illustrate the Telegram product and its operational surfaces. They are historical product examples rather than proof of the latest deployment or completed cross-product integrations.
 
 <table>
   <tr>
@@ -86,7 +101,7 @@ flowchart TD
     A --> O
 ```
 
-### Production topology
+### High-level service design
 
 - **Python Telegram worker** for interactive member and administrative flows.
 - **FastAPI/ASGI webhook service** for OAuth callbacks, provider events, health checks, and scheduled endpoints.
@@ -171,7 +186,7 @@ Release checks add live-provider comparisons, successful/failed transaction exer
 
 ## My role
 
-**Thomas Phillips — Founder & Technical Product Builder**
+**Thomas Phillips — Co-Founder of CrabStar & Technical Product Builder**
 
 I own Oracle from problem definition through production operations:
 
@@ -182,7 +197,7 @@ I own Oracle from problem definition through production operations:
 - Testing strategy, release checks, debugging, and production iteration
 - Cost, reliability, security, and operational tradeoffs
 
-My software career is newer than a conventional senior-engineering path. My ownership background is not: before building software products, I spent roughly ten years running an owner-operated contracting business. Oracle reflects that same operating model—define the problem, make the decisions, ship the work, and remain accountable for the outcome.
+My background in carpentry, contracting and commercial fishing shapes the same ownership model: understand constraints, make the decisions, deliver useful work and remain accountable for the outcome.
 
 ## Technology
 
@@ -190,18 +205,14 @@ My software career is newer than a conventional senior-engineering path. My owne
 
 ## Current status
 
-| Area | Status |
-|---|---|
-| Production worker | Deployed |
-| Webhook/API service | Deployed |
-| Scheduled jobs | Deployed |
-| Database-backed workflows | Implemented and exercised |
-| Automated regression coverage | Active |
-| Full-system production verification | Ongoing |
-| Public source release | Not planned; source remains private |
+**Reviewed October 10, 2026.** The private default branch represents substantial Telegram, intelligence, participation, support, analytics and API infrastructure. Open development work expands progressive authentication, canonical reputation/access, Q integrations and Bagwork profile experiences.
+
+Historical deployment records and interface examples are evidence of prior work. They do not establish current live health or full-system verification. New capabilities are considered separately as implemented, under review, deployed or verified.
+
+Long-term direction: shared identity continuity, reusable intelligence and support, cross-product contribution history and accountable ecosystem operations.
 
 ## Why this repository is public
 
 Oracle serves as evidence of end-to-end product ownership while protecting the production system and its users. This documentation exposes the product thinking, architecture, engineering tradeoffs, and verification discipline—not sensitive code or configuration.
 
-For a technical walkthrough or interview discussion, contact **Thomas Phillips** through [GitHub](https://github.com/darealrektrush) or visit [CrabStar](https://crabstarcoinsol.online).
+Explore the [ecosystem engineering portfolio](https://github.com/darealrektrush) or contact **Thomas Phillips** through [X / Trench Intel](https://x.com/darealrektrush).
